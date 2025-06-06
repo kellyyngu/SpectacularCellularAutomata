@@ -1,0 +1,104 @@
+button.square-btn {
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+button.square-btn {
+  border: 2px solid var(--foreground-light);
+  color: var(--foreground-light);
+  font-size: 20px;
+  border-radius: 4px;
+  min-height: 45px;
+  min-width: 45px;
+}
+
+button.square-btn:disabled {
+  border-color: var(--foreground-very-light);
+  color: var(--foreground-very-light);
+}
+
+button.square-btn:focus {
+  border: 3px solid var(--foreground);
+}
+
+button.btn-primary {
+  color: white;
+  border: none;
+  background-color: var(--primary);
+}
+
+button.btn-primary:active {
+  background-color: var(--primary-dark);
+}
+
+button.btn-danger {
+  color: white;
+  border: none;
+  background-color: var(--danger);
+}
+
+button.btn-danger:active {
+  background-color: var(--danger-dark);
+}
+
+button.btn-secondary:active:not(:disabled) {
+  background-color: rgb(0 0 0 / 15%);
+}
+
+button:hover:not(:disabled) {
+  cursor: pointer;
+}
+
+select.dropdown-btn {
+  background: none;
+  border: 2px solid var(--foreground-light);
+  border-radius: 4px;
+  color: var(--foreground);
+  font-size: 16px;
+  padding: 10px 14px;
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+}
+
+select.dropdown-btn:focus {
+  border: 3px solid var(--foreground);
+  padding: 9px 13px;
+}
+
+.hidden-arrow-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--foreground-very-light);
+  background: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.hidden-arrow-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+}

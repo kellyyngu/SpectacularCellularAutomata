@@ -1,0 +1,70 @@
+* :not(body) {
+  cursor: inherit;
+}
+
+:root {
+  --primary: dodgerblue;
+  --primary-dark: #1872cc;
+  --danger: #ff1e1e;
+  --danger-dark: #cc1818;
+  --foreground: black;
+  --foreground-light: #636363;
+  --foreground-very-light: #c4c4c4;
+  --background: white;
+  --very-light-grey: #f7f7f7;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  color: white;
+}
+
+main.dragging {
+  cursor: grabbing;
+  user-select: none;
+}
+
+#canvas-container {
+  grid-area: canvas;
+}
+
+#controls {
+  grid-area: controls;
+  align-content: center;
+  padding: 10px;
+  background-color: white;
+}
+
+#controls-bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-rows: min-content;
+}
+
+.controls-section {
+  display: flex;
+  gap: 4px;
+}
+
+#centre-controls {
+  justify-content: center;
+}
+
+#right-controls {
+  justify-content: end;
+}
+
+#settings {
+  grid-area: settings;
+  padding: 0 20px 20px 20px;
+  background-color: rgb(222, 226, 231);
+}
+
+#settings.hidden {
+  display: none;
+}
