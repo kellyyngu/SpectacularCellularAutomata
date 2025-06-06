@@ -9,11 +9,13 @@
         "preview": "vite preview",
         "test": "vitest",
         "format": "prettier . --write",
-        "check-formatting": "prettier . --check"
+        "check-formatting": "prettier . --check",
+        "deploy": "gh-pages -d dist"
     },
     "devDependencies": {
         "@iconify/svelte": "^4.0.2",
         "@sveltejs/vite-plugin-svelte": "^5.0.1",
+        "gh-pages": "^6.3.0",
         "prettier": "^3.5.0",
         "prettier-plugin-svelte": "^3.3.3",
         "svelte": "^5.8.0",
