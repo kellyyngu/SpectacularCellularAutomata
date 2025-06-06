@@ -6,7 +6,7 @@ Originally created as a Software Engineering Group Project (SEGP) at the Univers
 
 - Simulate 2D cellular automata and visualize them on 3D mesh surfaces.
 - Supports real-time rendering on dynamically generated spheres and tori.
-- Try it out locally or visit the live demo on GitHub Pages.
+- Try it out locally or visit the [live demo](#live-demo).
 - Licensed under the Mozilla Public License 2.0.
 
 ## Features
@@ -46,5 +46,10 @@ Originally created as a Software Engineering Group Project (SEGP) at the Univers
   ```
   npm run preview
   ```
+
+## Live Demo
+
+Check out the live version of the project here:  
+[https://kellyyngu.github.io/SpectacularCellularAutomata/](https://kellyyngu.github.io/SpectacularCellularAutomata/)
 
 Feel free to explore, modify, and share your own versions!
